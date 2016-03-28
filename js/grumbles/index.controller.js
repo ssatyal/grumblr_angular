@@ -12,7 +12,10 @@
     this.newGrumble = {};
     this.create = function(){
       grumbles.unshift(this.newGrumble);
-      this.newGrumble = {}
+      this.newGrumble = {};
     }
+    this.destroy = function(id){
+      grumbles.splice(id, 1);
+    };
   };
 }());
